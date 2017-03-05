@@ -77,7 +77,7 @@ public class CollegeEmployee extends Person{
         System.out.println("\n*******************************************");
         System.out.printf("Name: \t\t%s %s\n", getFirstName(),getLastName());
         System.out.printf("Address: \t%s\n", getStreetAddress());
-		System.out.printf("Zip Code: \t%s", getZipCode());
+	System.out.printf("Zip Code: \t%s", getZipCode());
         System.out.printf("Phone #: \t%s\n", getPhoneNumber());
         System.out.printf("SSN: \t\t%s\n", getSsn());
         System.out.printf("Department: \t%s\n", getDepartment());
