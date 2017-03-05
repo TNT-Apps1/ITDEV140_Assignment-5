@@ -40,7 +40,7 @@ public class Faculty extends CollegeEmployee{
         System.out.printf("Phone #: \t%s\n", getPhoneNumber());
         System.out.printf("SSN: \t\t%s\n", getSsn());
         System.out.printf("Department: \t%s\n", getDepartment());
-        System.out.printf("Salary: \t%f\n", getSalary());
+        System.out.printf("Salary: \t%.2f\n", getSalary());
         System.out.printf("Tenured: \t%s\n", tenured);
         System.out.println("*******************************************\n");
     
