@@ -36,7 +36,7 @@ public class SchoolDudes {
         System.out.println("Please select:");
         System.out.println("\t1) Add");
         System.out.println("\t2) Find");
-        System.out.println("\t3) DisplayAll");
+        System.out.println("\t3) Display All");
         System.out.println("\t4) Quit");
         tempInt = input.nextInt();
         input.nextLine();
@@ -64,21 +64,25 @@ public class SchoolDudes {
       do{
         System.out.println("Is this person a:");
         System.out.println("\t1) College Employee");
-        System.out.println("\t2) Faculty");
+        System.out.println("\t2) Faculty Member");
         System.out.println("\t3) Student");
         System.out.println("\t4) Quit");
         tempInt = input.nextInt();
         input.nextLine();
+		
+		if(tempInt>=4)
+			break;
+		
         System.out.printf("Please enter a first name ==> ");
         tempFirstName= input.nextLine();
           
-        System.out.printf("Please enter a last Name ==> ");
+        System.out.printf("Please enter a last name ==> ");
         tempLastName= input.nextLine();
           
-        System.out.printf("Please enter a street Address ==> ");
+        System.out.printf("Please enter a street address ==> ");
         tempStreetAddress= input.nextLine();
 		
-		System.out.printf("Please enter a Zip Code ==> ");
+		System.out.printf("Please enter a zip code ==> ");
 		tempZipCode= input.nextLine();
           
         System.out.printf("Please enter a telephone number ==> ");
@@ -121,7 +125,7 @@ public class SchoolDudes {
                 System.out.printf("Please enter the employee's salary ==> ");
                 tempSalary = input.nextDouble();
                 input.nextLine();
-                System.out.printf("Is the faculty member tenured? 1=Yes 2=No ==> ");
+                System.out.printf("Is this faculty member tenured? 1=Yes 2=No ==> ");
                 tenuredNumber = input.nextInt();
                 if(tenuredNumber==1)
                     tempTenured=true;
