@@ -18,13 +18,13 @@ public class SchoolDudes {
     private ArrayList<CollegeEmployee> collegeEmployee = new ArrayList<>();
     private ArrayList<Faculty> faculty = new ArrayList<>();
     private ArrayList<Student> student = new ArrayList<>();
-    Student student1;
-    Faculty faculty1;
-    CollegeEmployee employee1;
-    Scanner input = new Scanner(System.in);
-    int tempInt;
-    String tempFirstName, tempLastName, tempStreetAddress, tempZipCode, tempPhoneNumber;
-    Boolean intChecker;
+    private Student student1;
+    private Faculty faculty1;
+    private CollegeEmployee employee1;
+    private Scanner input = new Scanner(System.in);
+    private int tempInt;
+    private String tempFirstName, tempLastName, tempStreetAddress, tempZipCode, tempPhoneNumber;
+    private Boolean intChecker;
 
     public SchoolDudes() {
         dude();

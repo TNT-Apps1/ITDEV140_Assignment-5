@@ -12,7 +12,7 @@ package thompson_school.dudes;
  */
 public class Student extends Person{
     
-        private String major;
+    private String major;
     private double gpa;
 
     /**
