@@ -23,7 +23,7 @@ public class SchoolDudes {
     CollegeEmployee employee1;
     Scanner input = new Scanner(System.in);
     int tempInt;
-    String tempFirstName, tempLastName, tempStreetAddress, tempPhoneNumber;
+    String tempFirstName, tempLastName, tempStreetAddress, tempZipCode, tempPhoneNumber;
     Boolean intChecker;
 
     public SchoolDudes() {
@@ -77,6 +77,9 @@ public class SchoolDudes {
           
         System.out.printf("Please enter a street Address ==> ");
         tempStreetAddress= input.nextLine();
+		
+		System.out.printf("Please enter a Zip Code ==> ");
+		tempZipCode= input.nextLine();
           
         System.out.printf("Please enter a telephone number ==> ");
         tempPhoneNumber= input.nextLine();
@@ -100,6 +103,7 @@ public class SchoolDudes {
                 employee1.setFirstName(tempFirstName);
                 employee1.setLastName(tempLastName);
                 employee1.setStreetAddress(tempStreetAddress);
+				employee1.setZipCode(tempZipCode);
                 employee1.setPhoneNumber(tempPhoneNumber);
                 employee1.setSsn(tempSsn);
                 employee1.setDepartment(tempDepartment);
@@ -127,6 +131,7 @@ public class SchoolDudes {
                 faculty1.setFirstName(tempFirstName);
                 faculty1.setLastName(tempLastName);
                 faculty1.setStreetAddress(tempStreetAddress);
+				faculty1.setZipCode(tempZipCode);
                 faculty1.setPhoneNumber(tempPhoneNumber);
                 faculty1.setSsn(tempSsn);
                 faculty1.setDepartment(tempDepartment);
@@ -137,14 +142,15 @@ public class SchoolDudes {
             case 3:
                 String tempMajor;
                 Double tempGpa;
-                System.out.printf("Please enter the students major ==> ");
+                System.out.printf("Please enter the student's major ==> ");
                 tempMajor = input.nextLine();
-                System.out.printf("Please enter the students GPA ==> ");
+                System.out.printf("Please enter the student's GPA ==> ");
                 tempGpa = input.nextDouble();
                 student1 = new Student();
                 student1.setFirstName(tempFirstName);
                 student1.setLastName(tempLastName);
                 student1.setStreetAddress(tempStreetAddress);
+				student1.setZipCode(tempZipCode);
                 student1.setPhoneNumber(tempPhoneNumber);
                 student1.setMajor(tempMajor);
                 student1.setGpa(tempGpa);
