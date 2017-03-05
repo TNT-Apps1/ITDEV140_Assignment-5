@@ -61,7 +61,7 @@ public class Student extends Person{
             System.out.printf("Address: \t%s\n", getStreetAddress());
             System.out.printf("Phone #: \t%s\n", getPhoneNumber());
             System.out.printf("Major: \t\t%s\n", major);
-            System.out.printf("GPA: \t\t%f\n", gpa);
+            System.out.printf("GPA: \t\t%.2f\n", gpa);
             System.out.println("*******************************************\n");
     }
 
