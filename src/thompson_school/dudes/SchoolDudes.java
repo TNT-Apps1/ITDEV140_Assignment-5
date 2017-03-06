@@ -28,11 +28,11 @@ public class SchoolDudes {
 
     public SchoolDudes() {
         dude();
-    }
+    }//end constructor
 
     private void dude() {
        
-        do{
+        do{// controller loop
         System.out.println("Please select:");
         System.out.println("\t1) Add");
         System.out.println("\t2) Find");
@@ -57,11 +57,10 @@ public class SchoolDudes {
         
     }
         
-    private void addDude(){
+    private void addDude(){// add person to app
         
         tempInt=0;
         
-      do{
         System.out.println("Is this person a:");
         System.out.println("\t1) College Employee");
         System.out.println("\t2) Faculty Member");
@@ -71,7 +70,7 @@ public class SchoolDudes {
         input.nextLine();
 		
 		if(tempInt>=4)
-			break;
+			return;
 		
         System.out.printf("Please enter a first name ==> ");
         tempFirstName= input.nextLine();
@@ -91,7 +90,7 @@ public class SchoolDudes {
           
         
         switch(tempInt){
-            case 1:
+            case 1://add employee
                 String tempSsn;
                 String tempDepartment;
                 Double tempSalary;
@@ -114,7 +113,7 @@ public class SchoolDudes {
                 employee1.setSalary(tempSalary);
                 collegeEmployee.add(employee1);                
                 break;
-            case 2:
+            case 2:// add faculty
                 Boolean tempTenured=false;
                 int tenuredNumber;
             
@@ -143,7 +142,7 @@ public class SchoolDudes {
                 faculty1.setTenured(tempTenured);
                 faculty.add(faculty1);  
                 break;
-            case 3:
+            case 3:// add student
                 String tempMajor;
                 Double tempGpa;
                 System.out.printf("Please enter the student's major ==> ");
@@ -162,14 +161,14 @@ public class SchoolDudes {
                 break;
             
         }
-        tempInt=5;
-        }while(tempInt<4);  
+       
+         
         
         
         
     }
 
-    private void find(){
+    private void find(){// find a person by first name
         String tempName;
         System.out.println("Please enter a first name to find");
         tempName = input.nextLine();
@@ -189,7 +188,7 @@ public class SchoolDudes {
         }
     }
     
-    private void displayAll(){
+    private void displayAll(){// display all persons
         for (CollegeEmployee collegeEmployee1 : collegeEmployee) {
             collegeEmployee1.displayAll();
         }
