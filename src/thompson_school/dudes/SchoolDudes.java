@@ -89,7 +89,7 @@ public class SchoolDudes {
           
           
         
-        switch(tempInt){
+        switch(tempInt){//switch on user selection
             case 1://add employee
                 String tempSsn;
                 String tempDepartment;
