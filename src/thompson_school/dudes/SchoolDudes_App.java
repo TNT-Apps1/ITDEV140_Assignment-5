@@ -16,7 +16,10 @@ public class SchoolDudes_App {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       SchoolDudes dudes_1 = new SchoolDudes();
+        Admin admin1 = new Admin();
+        admin1.Hello();
+        SchoolDudes dudes_1 = new SchoolDudes();
+        admin1.GoodBye();
     }
     
 }

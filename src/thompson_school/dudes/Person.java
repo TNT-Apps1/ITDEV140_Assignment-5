@@ -16,7 +16,7 @@ abstract public class Person {
     private String lastName;
     private String streetAddress;
     private String phoneNumber;
-	private String zipCode;
+    private String zipCode;
 
     /**
      * Get the value of phoneNumber
@@ -114,13 +114,24 @@ abstract public class Person {
         this.firstName = firstName;
     }
     
+    
+    
+    
+    
+    
+    
+    
     public void displayAll(){
 		System.out.println("\n*******************************************");
-		System.out.printf("Name: \t\t%s %s\n", lastName);
+		System.out.printf("Name: \t\t%s %s\n", firstName, lastName);
 		System.out.printf("Address: \t%s\n", streetAddress);
 		System.out.printf("Zip Code: \t%s", zipCode);
 		System.out.printf("Phone #: \t%s\n", phoneNumber);
 		System.out.println("*******************************************/n");
-    }
+    }//end displayAll()
+    
+    
+    
+    
 
-}
+}//end class
